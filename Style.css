@@ -1,0 +1,249 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Top Division (Header) */
+.top-division {
+    background-color: #333;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-division nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.top-division nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.top-division nav a:hover {
+    background-color: #555;
+}
+
+.top-division nav a.active {
+    background-color: #0066cc;
+    border-bottom: 3px solid #ffffff;
+}
+
+/* Information Division */
+.information-division {
+    background-color: #f4f4f4;
+    min-height: calc(100vh - 60px);
+    padding: 40px 20px;
+}
+
+.information-division .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #0066cc;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+/* Paragraphs */
+p {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+/* Library Image */
+.library-image {
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mission and Hours Sections */
+.mission-section,
+.hours-section,
+.welcome-info {
+    margin: 30px 0;
+}
+
+/* Hours Table */
+.hours-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+.hours-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.hours-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Links */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Books Table */
+.books-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.books-table th {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.books-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.books-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.status-available {
+    background-color: #90EE90 !important;
+    font-weight: bold;
+    color: #006400;
+}
+
+.status-borrowed {
+    background-color: #FFB6C6 !important;
+    font-weight: bold;
+    color: #8B0000;
+}
+
+/* Form Styles */
+.borrow-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.05em;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #0066cc;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0052a3;
+}
+
+.form-description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 1.05em;
+}
+
+/* Error Messages */
+.error-message {
+    color: #d32f2f;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top-division nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .information-division .content {
+        padding: 20px;
+    }
+}
