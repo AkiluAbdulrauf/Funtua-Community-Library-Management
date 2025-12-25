@@ -1,5 +1,4 @@
-# Community Library Management Website
-## BCSL-057 Web Programming Lab Assignment
+# Community Library Management System
 
 ### Project Overview
 A dynamic web application for managing a community library, allowing users to browse available books and submit borrow requests.
